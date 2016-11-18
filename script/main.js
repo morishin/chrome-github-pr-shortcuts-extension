@@ -15,6 +15,10 @@
   }, false);
 
   document.addEventListener('keyup', function(e) {
+    if (window.location.href.indexOf("pull") < 0) {
+      return;
+    }
+
     if (e.keyCode == "17") {
       ctrlPressed = false;
     }
