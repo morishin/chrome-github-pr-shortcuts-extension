@@ -32,7 +32,8 @@
       } else if (e.keyCode == keyCode3) {
          tabs[2].click();
       } else if (e.keyCode == keyCodeO) {
-        document.querySelectorAll('.btn-link.discussion-item-toggle.discussion-item-toggle-closed.js-details-target').forEach(b => { b.click(); });
+        document.querySelectorAll('button.show-outdated-button').forEach(b => { b.click(); });
+        document.querySelectorAll('button.load-diff-button').forEach(b => { b.click(); });
       }
     }
   }, false);
